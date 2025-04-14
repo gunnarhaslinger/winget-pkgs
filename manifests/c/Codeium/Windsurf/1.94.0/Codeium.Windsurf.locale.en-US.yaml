@@ -29,7 +29,7 @@ ReleaseNotes: |-
   Patch Fixes
 
   Fixes
-  - Fixed issues with partial credits when transitioning to flex credits
+  - Fixes to "Remote - SSH" extension, including custom SSH binary path setting
 ReleaseNotesUrl: https://codeium.com/changelog
 PurchaseUrl: https://codeium.com/pricing
 Documentations:
