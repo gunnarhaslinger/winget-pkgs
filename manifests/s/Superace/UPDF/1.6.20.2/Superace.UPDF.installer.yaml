@@ -1,5 +1,5 @@
-# Created with YamlCreate.ps1 v2.4.1 Dumplings Mod $debug=QUSU.CRLF.7-4-5.Win32NT
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.6.0.schema.json
+# Created with YamlCreate.ps1 Dumplings Mod
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
 
 PackageIdentifier: Superace.UPDF
 PackageVersion: 1.6.20.2
@@ -10,15 +10,14 @@ Protocols:
 - winupdf
 FileExtensions:
 - pdf
+ProductCode: UPDF
 Installers:
 - Architecture: x64
   InstallerUrl: https://download.updf.com/updf/basic/win/updf-9000000000-win-full.exe
-  InstallerSha256: 3E46EEF2ABCA8DBC83E1080A78D320225707B107B5C72D497745D84661069605
-  ProductCode: UPDF
+  InstallerSha256: 5C01C38FF8A4218566F279B6D88921510C8AD8E2AC26FA3A0636B98CF4EA55C9
 - InstallerLocale: zh-CN
   Architecture: x64
   InstallerUrl: https://download.updf.cn/updf/basic/win/updf-8000000000-win-full.exe
-  InstallerSha256: 672A02687C5012A0D6A3B710AFE94D36386FBE29D6B7557195E4998C9961422F
-  ProductCode: UPDF
+  InstallerSha256: 3A82B14F6238CA46CE5746E23CAC9F8AB11A1126ACA93D8388872D21F35FC826
 ManifestType: installer
-ManifestVersion: 1.6.0
+ManifestVersion: 1.9.0
