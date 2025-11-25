@@ -123,8 +123,6 @@ configuration:
           - approvePullRequest:
               comment: ""
           - addReply: >-
-              Hello ${issueAuthor},
-
               Validation has completed.
 
 
@@ -225,9 +223,6 @@ configuration:
         then:
           - addReply:
               reply: >-
-                Hello ${issueAuthor},
-
-
                 Static analysis has timed out. The PR has been assigned to a developer to investigate.
 
 
@@ -244,6 +239,8 @@ configuration:
               label: Azure-Pipeline-Passed
           - removeLabel:
               label: Binary-Validation-Error
+          - removeLabel:
+              label: Blocked-InstallerType
           - removeLabel:
               label: Blocking-Issue
           - removeLabel:
@@ -429,6 +426,8 @@ configuration:
           - removeLabel:
               label: Binary-Validation-Error
           - removeLabel:
+              label: Blocked-InstallerType
+          - removeLabel:
               label: Blocking-Issue
           - removeLabel:
               label: EULA-Install
@@ -479,6 +478,10 @@ configuration:
           - removeLabel:
               label: Needs-SmartScreen-Investigation
           - removeLabel:
+              label: New-Manifest
+          - removeLabel:
+              label: New-Package
+          - removeLabel:
               label: Policy-Test-1.1.A
           - removeLabel:
               label: Policy-Test-1.1.B
@@ -526,6 +529,8 @@ configuration:
               label: Validation-Domain
           - removeLabel:
               label: Validation-Executable-Error
+          - removeLabel:
+              label: Validation-Forbidden-URL-Error
           - removeLabel:
               label: Validation-Hash-Verification-Failed
           - removeLabel:
